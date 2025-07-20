@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Blog Posts</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="animations.css">
+</head>
+
+<body class="bg-gray-100 font-sans antialiased">
+
+    <!-- ✅ Navbar -->
+    <nav class="bg-blue-600 text-white flex justify-between px-6 py-3 shadow-md">
+        <div>
+            <h1 class="text-3xl font-bold">AI Blog Generator</h1>
+        </div>
+        <div>
+            <a href="#" class="text-white hover:underline">Logout</a>
+        </div>
+    </nav>
+
+    <!-- ✅ Main Content Container -->
+    <div class="container mx-auto px-4 mt-10 sm:px-0">
+        <div class="max-w-3xl mx-auto bg-white p-6 rounded-lg shadow-md animate-fadeIn">
+
+            <!-- Blog Posts Section -->
+            <section>
+                <h2 class="text-xl mb-4 font-semibold">All Blog Posts</h2>
+
+                <!-- Blog Post 1 -->
+                <div class="space-y-4">
+                    <div class="border border-gray-300 p-4 rounded bg-white shadow-sm">
+                        <h3 class="font-semibold text-lg">Blog Post Title 1</h3>
+                        <p class="text-gray-700">This is the content.</p>
+                    </div>
+                </div>
+
+                <!-- Blog Post 2 -->
+                <div class="space-y-4 mt-4">
+                    <div class="border border-gray-300 p-4 rounded bg-white shadow-sm">
+                        <h3 class="font-semibold text-lg">Blog Post Title 2</h3>
+                        <p class="text-gray-700">This is the content.</p>
+                    </div>
+                </div>
+
+                <!-- ✅ Repeat More Posts Here as Needed -->
+            </section>
+        </div>
+    </div>
+
+    <footer class="text-center text-gray-500 text-sm mt-10 py-4">
+        Powered by 
+        <a href="https://github.com/viancodes" target="_blank" 
+        class="text-blue-500 hover:underline">
+            @viancodes
+        </a>
+    </footer>
+
+
+
+
+</body>
+</html>
