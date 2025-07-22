@@ -15,7 +15,7 @@ from .models import BlogPost
 
 
 # ✅ Configure Gemini API
-genai.configure(api_key="AIzaSyCruNiu5TyLw1JhfTy_1d1r8fo7uD_f8Ek")  # Replace with your actual key
+genai.configure(api_key="")  # Replace with your actual key
 
 # ✅ Whisper model (loads once globally)
 whisper_model = whisper.load_model("base")  # options: "tiny", "base", "small", "medium", "large"
