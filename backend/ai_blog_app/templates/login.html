@@ -14,8 +14,8 @@
     <nav class="bg-blue-600 text-white flex justify-between items-center px-6 py-3 shadow-md">
         <h1 class="text-3xl font-bold">AI Blog Generator</h1>
         <div class="space-x-4">
-            <a href="#" class="hover:underline">Login</a>
-            <a href="#" class="hover:underline">Signup</a>
+            <a href="login" class="hover:underline">Login</a>
+            <a href="signup" class="hover:underline">Signup</a>
         </div>
     </nav>
 
@@ -23,7 +23,19 @@
     <main class="flex-grow flex items-center justify-center">
         <div class="bg-white p-8 shadow-md rounded-lg max-w-md w-full animate-fadeIn">
             <!-- Login form -->
-            <form class="space-y-4">
+            <form class="space-y-4" action="" method="POST">
+                {% csrf_token %}
+
+                {% if error_message %}
+                <div align="center" style="color:red;">
+                    <h2>
+                    {{ error_message }}
+                    </h2>
+                </div>
+                {% endif %}               
+
+                
+                
                 <h2 class="text-xl font-semibold">Login</h2>
 
                 <div>

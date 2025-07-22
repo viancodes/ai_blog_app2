@@ -17,12 +17,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
-from ai_blog_app.blog_generator.views import index
+# from ai_blog_app.blog_generator.views import index
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    # path('', include('blog_generator.urls')),  # ✅ Link to your app
-    path('', index, name='index'),
+    path('', include('blog_generator.urls')),  # ✅ Link to your app
+    # path('', index, name='index'),
 ]
 
